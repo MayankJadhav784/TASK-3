@@ -1,0 +1,21 @@
+﻿OrderID,OrderDate,CustomerName,Region,Category,SubCategory,Product,Quantity,UnitPrice,Discount,Sales,Profit,OrderPriority,PaymentMethod
+1001,2025-01-03,Anita Sharma,West,Technology,Phones,Galaxy S22,2,55000,0.1,99000,14850,High,UPI
+1002,2025-01-05,Rahul Mehta,North,Furniture,Chairs,Ergo Chair Pro,3,12000,0,36000,7200,Medium,Credit Card
+1003,2025-01-07,Neha Verma,South,Office Supplies,Paper,A4 Copier Pack,10,250,0.05,2375,356,Low,Cash
+1004,2025-01-09,Vikram Singh,East,Technology,Laptops,ThinkBook 14,1,78000,0.15,66300,13260,High,NetBanking
+1005,2025-01-12,Pooja Iyer,West,Furniture,Tables,Standing Desk,2,28000,0.1,50400,10080,Medium,Credit Card
+1006,2025-01-15,Mayank Patel,West,Office Supplies,Binders,Lever Arch Binder,12,180,0,2160,324,Low,UPI
+1007,2025-01-18,Sana Khan,South,Technology,Accessories,Bluetooth Headset,5,3500,0.2,14000,2100,Low,Cash
+1008,2025-01-20,Arjun Rao,North,Furniture,Storage,3-Drawer Cabinet,1,9500,0,9500,1900,Medium,Debit Card
+1009,2025-01-22,Divya Nair,East,Office Supplies,Writing,Gel Pen Set,20,120,0.1,2160,324,Low,UPI
+1010,2025-01-25,Karan Gupta,West,Technology,Tablets,iTab 10,2,32000,0.05,60800,9120,High,Credit Card
+1011,2025-02-01,Anita Sharma,West,Furniture,Chairs,Mesh Chair,4,8500,0,34000,6800,Medium,UPI
+1012,2025-02-03,Rahul Mehta,North,Technology,Phones,Pixel 8,1,62000,0.1,55800,11160,High,NetBanking
+1013,2025-02-06,Neha Verma,South,Office Supplies,Storage,File Box,6,600,0,3600,540,Low,Cash
+1014,2025-02-09,Vikram Singh,East,Furniture,Tables,Conference Table,1,45000,0.2,36000,7200,High,Credit Card
+1015,2025-02-12,Pooja Iyer,West,Technology,Laptops,UltraBook 13,1,92000,0,92000,18400,High,Debit Card
+1016,2025-02-15,Mayank Patel,West,Office Supplies,Paper,Premium A4 Ream,8,300,0.05,2280,342,Low,UPI
+1017,2025-02-18,Sana Khan,South,Technology,Accessories,USB-C Dock,3,7000,0.15,17850,2678,Medium,Credit Card
+1018,2025-02-20,Arjun Rao,North,Furniture,Storage,Bookshelf,2,11000,0,22000,4400,Medium,Debit Card
+1019,2025-02-22,Divya Nair,East,Office Supplies,Writing,Marker Pack,15,150,0.1,2025,304,Low,Cash
+1020,2025-02-25,Karan Gupta,West,Technology,Phones,iPhone 15,1,80000,0.05,76000,15200,High,NetBanking

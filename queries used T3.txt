@@ -1,0 +1,103 @@
+CREATE DATABASE retail_sales;
+USE retail_sales;
+
+CREATE TABLE saless (
+  OrderID INT PRIMARY KEY,
+  OrderDate DATE,
+  CustomerName VARCHAR(100),
+  Region VARCHAR(20),
+  Category VARCHAR(30),
+  SubCategory VARCHAR(30),
+  Product VARCHAR(100),
+  Quantity INT,
+  UnitPrice DECIMAL(12,2),
+  Discount DECIMAL(4,2),
+  Sales DECIMAL(14,2),
+  Profit DECIMAL(14,2),
+  OrderPriority VARCHAR(10),
+  PaymentMethod VARCHAR(20)
+);
+
+SELECT COUNT(*) FROM sales;   -- should return 20
+SELECT * FROM sales LIMIT 5; 
+
+
+-- Preview first few rows
+SELECT * FROM sales LIMIT 5;
+
+-- Total number of records
+SELECT COUNT(*) AS total_rows FROM sales;
+
+-- All Technology category sales
+SELECT * FROM sales WHERE Category = 'Technology';
+
+-- All orders from West region
+SELECT * FROM sales WHERE Region = 'West';
+
+-- Orders with Discount > 0.10
+SELECT * FROM sales WHERE Discount > 0.10;
+
+
+
+-- Top 5 highest sales
+SELECT Product, Sales FROM sales ORDER BY Sales DESC LIMIT 5;
+
+-- Lowest profit items
+SELECT Product, Profit FROM sales ORDER BY Profit ASC LIMIT 5;
+
+
+
+-- Total sales and average profit by Region
+SELECT Region, SUM(Sales) AS TotalSales, AVG(Profit) AS AvgProfit
+FROM sales
+GROUP BY Region;
+
+-- Orders count by Category
+SELECT Category, COUNT(*) AS OrderCount
+FROM sales
+GROUP BY Category;
+
+
+
+
+
+-- Categories with total sales > 100000
+SELECT Category, SUM(Sales) AS TotalSales
+FROM sales
+GROUP BY Category
+HAVING SUM(Sales) > 100000;
+
+-- Regions with average profit > 5000
+SELECT Region, AVG(Profit) AS AvgProfit
+FROM sales
+GROUP BY Region
+HAVING AVG(Profit) > 5000;
+
+
+
+-- February 2025 sales report
+SELECT OrderDate, SUM(Sales) AS DailySales
+FROM sales
+WHERE OrderDate BETWEEN '2025-02-01' AND '2025-02-28'
+GROUP BY OrderDate
+ORDER BY OrderDate;
+
+
+
+-- Customers with 'an' in their name
+SELECT OrderID, CustomerName FROM sales
+WHERE CustomerName LIKE '%an%';
+
+-- Products with 'Desk' in name
+SELECT Product FROM sales
+WHERE Product LIKE '%Desk%';
+
+
+
+
+
+SELECT CustomerName, SUM(Sales) AS TotalSpend
+FROM sales
+GROUP BY CustomerName
+ORDER BY TotalSpend DESC
+LIMIT 5;
